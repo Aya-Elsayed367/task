@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h2 {
+  text-align: center;
+  text-shadow: 1px 1px 30px  rgb(0, 0, 0);
+  display: block;
+  font-size: 50px;
+}
+#head {
+  width: 100%;
+  height: 170px;
+  background-color: rgba(13, 63, 40, 0.6);
+}
+#div {
+  height: 7px;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 150px;
+  background-color: rgb(9, 46, 29);
+}
+#color {
+  width: 100%;
+  background-color: rgba(13, 63, 40, 0.6);
+  height: 100px;
+}
+#p {
+  text-shadow: 1px 1px 30px rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+}
+body {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Arial, sans-serif;
+  display: flex;
+  background-image: url(../img/WhatsApp\ Image\ 2024-09-16\ at\ 11.23.57\ PM.jpeg);
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main {
+  background-color: rgba(24, 11, 7, 0.4);
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(13, 63, 40, 0.6);
+  justify-content: center;
+  padding: 20px;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 15px;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+}
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+  border-radius: 8px;
+  box-shadow: 1px 1px 20px 10px rgb(9, 39, 18);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.card-front {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 18px 3px rgb(14, 41, 23);
+  justify-content: center;
+}
+.card-back {
+  background-color: rgba(13, 63, 40, 0.7);
+  color: white;
+  transform: rotateY(180deg);
+ 
+  text-align: center;
+}
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+.card h3 {
+  margin: auto;
+  display: block;
+  margin-top: 45%;
+}
+.button {
+  background-color: rgba(5, 29, 18, 0.9);
+  color: rgb(230, 255, 247);
+  font-weight: bold;
+  font-size: 19px;
+  width: 150px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+.button:hover {
+  background-color: rgba(5, 29, 18, 0.5);
+  font-style: italic;
+  width: 170px;
+  font-size: 22px;
+  border-radius: 30px;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.overly {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(13, 63, 40, 0.4);
+}
+#p2 {
+  text-shadow: 1px 1px 50px rgb(0, 0, 0);
+  margin-bottom: 50px;
+  margin: 20px;
+}
+.card:hover .transition {
+  transform: translate(0, -25px);
+  transition: 1.5s;
+}
+.transition {
+  transform: translate(0, 30px);
+}
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 1px 1px 30px rgb(0, 0, 0);
+  transition: 0.5s;
+}
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 2px 2px 30px black;
+  transition: 0.5s;
+  margin: auto;
+  padding-top: 320px;
+}
